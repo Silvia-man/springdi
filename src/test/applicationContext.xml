@@ -7,4 +7,12 @@
         <bean id="xmlApp" class="com.drama.consumer.XMLApp">
             <property name="service" ref="sms"></property>
         </bean>
+
+        <bean id="employee" class="com.drama.consumer.Employee" autowire="byName">
+            <property name="name" value="Guo"/>
+        </bean>
+
+        <bean id="department" class="com.drama.consumer.Department">
+            <property name="name" value="RD"/>
+        </bean>
 </beans>
